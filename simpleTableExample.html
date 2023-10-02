@@ -1,0 +1,16 @@
+Scraping Examples:
+On the page there is a table, the following is a head:
+<thead><tr role="row"><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TableItemRow">Item</div></div></th><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TableTier">Tier</div></div></th><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TableNum">Avg Place</div></div></th><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TablePlacement">Place Change</div></div></th><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TableNum">Winrate</div></div></th><th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer;"><div class="Column_Header_Div"><span class="Sortdesc"></span><div class="TableNumRight">Frequency</div></div></th></tr></thead>
+Then the rows are in a group, with each row consisting of:
+<tr role="row"><td role="cell"><div class="TableItemRow"><a class="StatLink" href="/items/TFT9_Item_NoxusEmblem"><div class="display-contents"><img src="https://www.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/items/tft9_item_noxusemblem.png" alt="Noxus Emblem" class="TableItemImg"></div>Noxus Emblem</a></div></td><td role="cell"><div class="TableTier"><div class="StatTierBadge Badge_S" id="Tier0">S</div></div></td><td role="cell"><div class="TableNum TableNumRow"> 3.07 </div></td><td role="cell"><div class="TablePlacement TablePlacementRow" style="color: rgb(191, 254, 127);"> -0.66 </div></td><td role="cell"><div class="TableNum TableNumRow"> 31.8% </div></td><td role="cell"><div class="TableNumRight TableNumRow"> 15,393 (6.0%) </div></td></tr>
+There are multiple rows.
+Then there are multiple champions.
+Your task is to write a python webscrapper to grab, format and save the stats for later usage!
+
+Note:
+Question, I am web scraping a website to get some stats, I need to select some items to get different tables, I am using Python for web scrapping, how can I accomplish this? Here is an subscript on the items to 'click' to switch tables on the page:
+<div class="StatOptionChip ChipSelected">Builds</div>
+<div class="StatOptionChip">Items</div>
+<div class="StatOptionChip StatOptionChipAugments">Augments</div>
+To address this I got selenium working to control my safari browser, I believe we can use this to manipulate the browser to select items.
+Now I've never used selenium before. i am not sure how to manipulate the page, and more importantly, scrape the key points of data from the page!
